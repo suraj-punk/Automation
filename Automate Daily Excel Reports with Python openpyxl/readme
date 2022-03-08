@@ -1,1 +1,3 @@
+This file can be used for automating repetitive/daily tasks like updating a daily report, publishing, formatting in excel.
 
+The aim is not to avoid excel, but to automate reports in excel using pythin libraries.
