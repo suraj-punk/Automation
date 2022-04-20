@@ -1,0 +1,461 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="831.2,3660" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="62">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="841.6,3595.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ChallengeData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="800,358.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="508,280" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,187.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.theautomationchallenge.com/">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+          </ui:OpenBrowser>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:ReadRange AddHeaders="True" DataTable="[ChallengeData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="800,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="data" WorkbookPath="challenge.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Start" sap:VirtualizedContainerService.HintSize="800,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bf0c562d-b614-4990-9543-f503a947afbd" InformativeScreenshot="552b4a0eecb8a044efa967eb1d0f4950" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;&lt;webctrl aaname='Start' tag='BUTTON' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach To Browser" sap:VirtualizedContainerService.HintSize="800,396" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0ee41c3038ce9cf9f49b0e49dd535a79" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,208.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Activate="True" DisplayName="Zoom to 100%" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="0" KeyModifiers="Ctrl" SendWindowMessages="False" SpecialKey="False">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="83065a08-19d0-480a-b7c4-7e000c6557ab">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ChallengeData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="800,2392.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="766.4,2272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Address" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Address" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[CurrentRow(&quot;company_address&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Address" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAUCAYAAADBYxD1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOYSURBVFhH7Vet1qMwEN33wkShqlAoTBQKhULVoFA8AKoqJgpVhUJhUCgUKgpVe3cCoeUn9OtZted8FVeQmU5mbjI30z+PxwNfvMeXpA/wJekDnJOkSsSOA8cr0Nrs79BkcJwIcrDYdmgy2iOSGCy2/wWnJKkyhsMYmOOhaO0+p/gdJCncEwdeISG4g0B0Fp83+BUkqTsShyFrHugFhxMIdDa/M/wGktQ9oVbL0OjvXoA7AUR39Jsw1ChiH67WL8cFTyW6yk7SUBeIfZds5OtypLJDdSBpgIwcRGTrZAruznGzZnzFoj1vCceFaZsD14+RlR3GZ4wZY1cie+Z24reLxS4cya3eHJqFpLnVWNaY7/685fSNo+CM56i6AWqgonMOl7RsT5ImntHt5HmFblAYugo5d8F0chaSPN9HcBVoekVxewyjsdOeV5e9bKpHIzNwisPXOQ4lIsqD5yVa49eWOfkxROUw+4wNct+BT7Fqnb8a0NUCV72WN08yjyStWm1Z60RgbblpnaWolgImjKjSPUkdREBkptX2FMcK6QlJZy3YFp7VNlYpEZ6iNrkMMrLm3Mvw9ftJFvb5E2q9bjqJcCBJb6YLXzab0AkEDofoV2tUTKmLyerV2owpxpokfap0lbN66zcTaicplP3Kb2uz3upB0h4h5JJjW8CjHG6tOvoumMYcD+nd3KwT7Eiak2Zpvevv+SZwsU78TTF74d4XsMJRuOe4kbQlbm6Z0Rgb1h3Ql1cEWg4uEdKbpPZc6ZqBam4Ite6RRiaZmGRjr21bkvT1p1ZL62OwqbW4QP9ce1OMlaStRi34F5JC0ZJ+aJ05Yl+gPvi+LSHSGD6RwYIr7ofDGkkja8g8Ab+QVLgh3cAXBxuS5jbZnswW65Zb2m0R+H0cS7utTnnGebvZSTKPConq0fYJFOrMrmlr9IL0bHndCSuSRtRacGOJ3nJCStXIvW3y0+3yKNiHwu0RoZ8Kt50kM7f5lr9KPT33RQNlvt8KN8tnAt4Kd4TS5P8iaaynhJP7udAdXhZTpBsWP44A0+tD805YfDYCnJGkn+2Mnmg9dpRtT4dHz3ZVTLrirw/BjAB6VJif92UEWD3vZgTQ+T9jmRGAReUzpydJY62LiFEqs4kNxDzba4sZxj4bJm9IiJipdX8cJk9I0lAtZLofJkmn9n7ToBus/ELac+c3xQonvdI+7BIgLn4cJr/Y40vSB/iS9CMe+AvF1zBSv4bc+AAAAABJRU5ErkJggg==" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Date" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_7">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Date" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[CurrentRow(&quot;date_of_first_project&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Date" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_7">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAVCAYAAADSM2daAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAINSURBVEhL7ZYtk7MwFIXf/4VBoaqqUJgoFKqqqgYVxQ9AoTCoqCpUFCYKhYpCobBnL/3YhoTuwvSd3enMimOSk/QJOTe3/8ZxxLvpD/qnZEFrVIkHz3MVhAdwodDP/L+jZei0Rt/3hjookYH5HkLeYJitWam+QVmc0Q4Lcxu1DE1g8/GrBsmx9/bIlTv3rRpON5ag0gtzG7UJehwbcIpKIvTC3Df6dejKhNaQxRFs51/zH4Q4cGHE4EmdWL+hZYEj28G/zAcIDxyiHWaeu16E1hAJwYYnlLKFpvzrtkbGaCyp0N3WDVNd1CnBxCjVrU6MbPfnEwI/wqls0E1zXYOKMzoAQ9k+fHe9Bt1LZHGEvLF8ukJiZ/9pPBTyvX17kwbUqQ8/lU7h/4d4LOnq4+ZhnkFfDhgtflFdJfDix43d9Tq0liiODDt6Du3crod21z7E0Zh+0ovxOONIsEGcQ6jOeNdrpORbD21k3ZFbjBuh5RX69uRpQde3z6Ec34Z4TAf3fGR2XXyhTdB2c7lkLirRWr6xLRCthR47lIw6ba6s8RGd4FTkvTO+DL3QxpuKu21c5QjpK7FMQHXk0y3k5Auo6m1oLS7ZDVN6wzV5jSdvoAPZ+9R5jMALaY+18aDNbT37wzRrCv4O7FhAUnE68SB15/SzCdkvUK8qpHZzoZybnrss6PfQH/RP6Q2hR3wA+dwlL3ezBokAAAAASUVORK5CYII=" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Automation Tool" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_5">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Automation Tool" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Automation Tool" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_5">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAWCAYAAADAbX5DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAS2SURBVGhD7Vmp2qtIEL3v1QYVFRWFwqBQKBQqBoXiAVAoDAoVhUJhUCgUCoX67ZlqloSlIfBDZvLNRRyR6oZaOF1L58/Pzw9OnNiDk0QnduMk0YndOEl0YjcWSVSGBhhjuLmpcP2vRpXAkRkuRohCtP4pFAF0+ib8uyxBDwrx8wegCHQwPXj6vUCiEqHBIEkS2M1FKtyzDVX2gOcnKAVr34kSie/hkVXTtfKBu0QfTPaQjdc+igplWb6Q+tCINFbUk3FUomePwXoSUZBMdoMb+FCZAj8T7NmIWjmzkQjWvhMJ7KVTXZWoRPJ/E21mshPB2oewmkTlwwST+AfP4asMip8J923B/45E34DvJVGJh0mlzE7q37mvgim+IG03QZ46UCDQKdW3z3f73tXtInZhKFdIfF26QjV9JOVrvUGrM8oQWCquvKSwC2TDRVzQepUhtPVWLuGqt/LBO7guD6ba6qqftxH2ylZD+MbOF/oHoPFRRLDf+0H2qhYCUfmcw1sSFYhdA8qV2hLaJ11VmHMtRZmSLRrkS+PvRTbIvnyybx2J6lImvQzL50raWhJRP0R1OvU1Ms5CJKjbORkmSQru5GBOa0UWwdUuYJc7HoMP0Ojs780TH3dqcplswTb77whhKxQ82UHS01WEpIvJtC9GVpAdRYbIUUmmI8jbfVSqyjKCRbo0P217jf7HFZPod340dvC9jkr2SjpCAfGFWCRRTjZKkJQ7/CQn+wtkkQuNSHK5P4ZEokHB5oOC5iLKCtqbUz94h0I9seINB6tVJHqVsk6WwVdEJW09iThmy1kVwyJjzUc5lHO9VEqH02GjUx3bknlQSK54I3l9APo2logdDYo7tK2zWaRLXM4EJPqFHxN7KyIuZSUtmGYAIRZIVMUWkdQckZeQ8ZhQv5u+ZHW1kacDVBXRO5iBsPeOFSSqEFl0Qqx40DRmvgKm+sh7ssNIlDh1FhCdvjyg7NUzeF7nVvkUiT22uXl2NYkO8UMcu1kskChxKKvpoisIylBa3/YCIemUHJHOeGLnexLxk0ClzIpHdZnYqzAVfpfua2wLxDyJbLGcMH1mK1lEcuoTPBNq2ycMsItER/hxIIkmh6LDWIfAlyemMXhLIp6+mGQhntwzNCVN9ftpdlsgvoNEfGgg8lw0uGFa9y3d3QrPwCeJxnunMXhDoqaUTU5nH4OSti0Q8ySaLwN1GT2ynBUhBX3YD3T4ZDlb78eBJJotZ01CeNm+UM7qyjR8/zKJ6saQwaCmrjudA8QObnyCeQYpgUP755rD1SRqG1IrGo+28w3pW7LMyeugiybNDB4FdheJDvHjOBI1jTVNw+OqMtdYU4IYX+NsbqxrpUzQzT+Rwr0NA5e6MhGDj8uvkdZRL2S8IBD1SZWg02TE9/Yb962j8a9JxH2gUVZSHYRpO/bGAWyhzc0J5VcHYT32Hj/if5JE/8GIXyG2KP0Z4eJ/W4nNU2Q/LZdIA+vZpEpXHW6czASiQuoZz8usseODC8B3l3RvybIgL2J4Zv+Cz4QXU7Mt6iHyB6zOpoHfYhJx7PNjK4l4eRa9p8NwiHh32Rjar++z77LxxIkNOEl0YjdOEp3YjZNEJ3biB/8A+2DmYlDJv+8AAAAASUVORK5CYII=" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base EIN" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type EIN" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image EIN" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAATCAYAAAD4f6+NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAElSURBVEhL7ZWtkoMwFEb3vWLyDFXxqFV5ADwqqg+AWhUThUJVVWFQqCpUVFTst3d3C4Xw02WmM4moODPk5uPmDITw4b1HSryFnrEQahQDY/tI08/z0qCf9PCNotwJ6uoetRkNVNBnYF3oU6O1FnYLF+RXhaguzmgm2QdHhcIFdtgW4uCcQZTtLP9HFCGJL12Aswy6m8z9EknI9BZ1Tk9KVkG/aEJ03VeQnCOv7eS+o0IUXnJfYC2/J0Tjm5FgvMBl3OBHhTa+Mhdkx/wTIe876IzhpK73HjFf2VBrSwgmULY/4xSEvENzFmCZRpeGEOEuKOhsksYkIkTYOqcDk46CV2zqkX/9OtaFvO9RSU7zR4QovMe00XEh4mYggz4DC6HYJCbk8Q1Vg2gGyJ7/bQAAAABJRU5ErkJggg==" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Annual Saving" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Annual Saving" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Annual Saving" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_6">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAYCAYAAAA4e5nyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUsSURBVGhD7Vktl7M8FHz/FyYKVVWFwqCqqlAoDCqqPwBVhUGhqlBRGBQKhUKh1s57k9ASIHS7Z7dnz7OtGFES8nEnmbmX/vfx8YE3Xgdvwl8Mb8JfDG/CXwz3Ce8LhI4DZ5+itrX/U6jAaS+8srUZ6GsUPIS/Y3Dk3h0X3iHCWXT2/j+FocLJc+CGBTpb+w/hLuF9EcJhDMzZI63tff4dPEB4f0HsUtAPKYq6Rd/36Fs6AOcIPnPg8QqD7b2fgJyb5nC8Mxpb+w/hDuE9LpGDfZojCxz4WWPp8y/hc8KbzIfj2wM+CI79sw/+0D/vQI3YJpxOXOQwFaA2CygQ2VNP3vPxOeEVpxvGhbXt+v4xf7K0PxmbhPeXiOSco5K/2wyB4yNr1v26/AjnmKMSKULP1b7neghTsfCiDvlRBqyCSEN4JJ2yr+uFSFf+uEWOHsMhaTWf93UBHnpw5dx0SHeBzXM/J1wd7D2HGGztA9pKoGoH41kHQXIfXP1e7psXaIz3hzKhthBFPz3TqJHupYLW4+9rfMx1j2suG+RJgJ2UfLW/BHljrmME5R9TP8o9whSiynGkd07jvjcI13LOboFtN2VdEU4+7wan0fdaVFkMjxbqnUzP0xtizEVwKlC30h8rZLFHi/NoQeYGHid8qE40F5vGvM2/BxePjGlgqHEOiDz3gJSC3Nv63NChOFJfL0YmGnTk911T4iTfpwvQXvsNJRKaNyz6+ft1urCIbcIZ8xFnAk1nzMGOKLprP8KY9DGf1lNNPPiuzMGmfdsJN+T8+kz721rWFeFOjHJxKxp5Wxy6LbdnI1lxufCpRh2muZQ+TnibU0YdrTPbilNQootB2gOEK/So8wSBVCC2w5GTepmBvaIXOB18pMvxOnmjTCIHlAmNRdm3eYDqdL+I5zbh/nlx0eQholt8yNvbM33xIlwWSqIS788IVzLEkrm0NRl8J0DWGs8IV0lflRIVp4mOyG/Bsm1IQ3nnbIzHCd/Cel2PEn6FlPAc/CBtisGP85lUb2M9j5Z1kwwt53PF3Cb8kTgIGcNkeZkIbY7DfcL1iWSJWN9E30GQTadK4vcJH9AUfMofTHyL8Al9nSP2pXyfUJmkdwLn6OqZc8zmGYS6kdFllHUl58uc6DuE2+IyQinOPcKV5zAkM//TULIeZJM/EX6b8DqlHMDwOFU7E+rs8EXCezRimZQZGGX0Rpq0Pfo9q9kVtGfP5xkgksli7Pb4S4Rr+aGXNzGX9d8lnBIVCvoqISJ8XdL1WLb1aei53VTP3RU0vvULpH2eQSSUPCWU69iV0h6fR+MwxvDrkj6exJCyzNuJNUGJCnmPuahnES6Dv5WsmITLgCTl8laSLcXrMe8TPlYm9I6pYDcsbrjat+3bRHOmXMcyzyjrSZpac6HvEq7WQ3nXMnm+n7QtvcYClV0agXwO4aNUU7kWZ5U6fLoccalEMTcqSZLeOpVGLdXkZ6rJGZWKXyOcQLfhSOO7B468rMdD36IuM+Xhs8NAPjwrB7sGIueU3c/LoAnjZaK2pS1qfI9wWZbxRVlW03rulmVadmwfCQwQkcwg8lmE38qj8aMG2x2Risqy0Ub92WF+yOFFg2a1rgcIl7j+eXJLAhl2Po2ZV6s9duKMKNipgMoSLojOEJTIbc6jYmeTc4lvEi6x+eFlg/A3/iBUOX1APlrIm/A/Dl3FjJ/ICW/C/xoGnWC3dYmcB2QhLlUxk028Cf9jUDmVzClcD4dI/r8xT8DfhL8Y3oS/FD7wP6/u9BKY+TgUAAAAAElFTkSuQmCC" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Sector" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Sector" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="[CurrentRow(&quot;sector&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Sector" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_4">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAXCAYAAABTYvy6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALvSURBVFhH7VerkqwwEL3/hUGhRo1CYVAoFAqFGRW1H4BCYVAoFAoVg4pCRaFQY8824RVeU7NVc7du3RlxqnZDJ+mT7j7d8+d+v+Md8SH+bvgQ7yGrBKFnwzIMGATz4iBgOep2vel/wEy8ThyYpoMorSBki7aVEFUG5lkwTB9Zs9/8anSiQJJytAffXo2BeFfiRhGOyu7AqEHmUwaExV93SGY+ZRoDP/j2agzEZQbf8E6j+lsO/T7xrsLNNOBnzaHRXdaoKrGJeAeRMwQ2lUKvCeYFbpigkrrNiLZGdnNxoTt6W8sOwHKBbrbhYKOu6PAzuTpHVjEC5wKz/67uS8G3+sMZ7WXkR4XYH2xNL0Oj2xDmGpdFBNsw4UR0WHOU8msoTbA8xKWAbFtIUSIJbHLohrLTbDsiZRNZL0YpJGlHA55GcOgRbMZn8h2dUaceOU376e+2h3ZOQ9kwaBBHM94X9/pjRSh08oq4Ddtx8TX61jTrB+wxE1fQXslyQyS08bCu2wKhcQXj2wcSSF0DbrpkjkgdGE4CsbIjouWN7iHR1DLkNNVVRpoIi3a9Pt53jetlTRE/8m2NNfEJrUCZhCoqRh/VavNi6vBNZEdwRntYNf4vkZMwml98ZaPQUeT5+mFPifMv9Uj5QRk1GWWJn0FOa1OqazZHOCY+Q6KKPerrJvxcI68OX2pxh9kRqTrCtlbPcE58IHMkers9D2x1KOJdww/Ea4FIXRjXGPW0NkV8qsUdpjT7x4nL/OTCCeqwYEm1Osb1JPXWeJzqNYndouyPiJ+nutKQg1R/ivhAxD4VhF3ET8WmA08YcrGc02z3jpjETSdzSny877YbsM7E7VnivcOsb0UOwiQHV22nbxkcuarx/aOo9kLr84hL5ZJG/di7GW8ftTPKBD3iQ2RJT+KhZenfftbOniY+YPiR4syDhmHZ8GgoKcU2spM9DRQvGWAmdDQfBLCtwY7x9Xfln/vcAPMj4u+ED/F3w4f4e+GOb70RLMsKAIkbAAAAAElFTkSuQmCC" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base Company Name" sap:VirtualizedContainerService.HintSize="724.8,228" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+              <ui:AnchorBase.Action>
+                <ActivityAction x:TypeArguments="ui:Anchor">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+                  </ActivityAction.Argument>
+                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1" DelayMS="1" DisplayName="Type Company Name" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[CurrentRow(&quot;company_name&quot;).ToString]">
+                    <ui:TypeInto.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="652ed08c-4844-4cc3-bb48-ccb345a37867" InformativeScreenshot="31b8781a107946129ef774f3729f5897" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="NONE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:TypeInto.Target>
+                  </ui:TypeInto>
+                </ActivityAction>
+              </ui:AnchorBase.Action>
+              <ui:AnchorBase.AnchorProvider>
+                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image Company Name" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                  <ui:WaitImageAppear.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+                  </ui:WaitImageAppear.Image>
+                  <ui:WaitImageAppear.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fbd7247-e240-4bd0-940d-8e7d41fa51b6" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:WaitImageAppear.Target>
+                </ui:WaitImageAppear>
+              </ui:AnchorBase.AnchorProvider>
+            </ui:AnchorBase>
+            <ui:ClickImage ContinueOnError="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1" DelayMS="1" DisplayName="Click Submit" sap:VirtualizedContainerService.HintSize="724.8,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+              <ui:ClickImage.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickImage.CursorPosition>
+              <ui:ClickImage.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAABSCAYAAACi7bOhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAbvSURBVHhe7drNTxtHHMbx/hVVj616qJQcc+utl1KlL0qVSDmRI4kq5eZLklsRPZRDkxyQcssNqrSo4GIEDnlRYwkRIhkiOLguAUeqsbAxYnkR9cuv8yxee9aM1zZgz8GPpY/U2MuOkebbmd3lg4ODAyEiexghkWWMkMgyRkhkGSMksqztCPf392Vvb8/lOI7s7u4S9Sw04PWANkzNNNNWhBgIA+fzeclms7K1tSWZTEY2NzclnU4T9QzMecx9NIAW0ATaQCOmdoK0FCEKR/Hb29vu4Ovr65JIJGRlZUWWlpZc8XicqGd48x4NoAU0gTbQCFppZ1VsGiFOhsJzuZykUilZXl6WWCwm0WhUpqamJBwOy+TkpExMTBD1DMx5zH00gBbQBNpAI2gFzbQaYtMIUTVO+u7dO1lcXJTZ2Vl5eX9QkrcuS/bqBfnvyw+Jelb22kW3BTSBNtAIWsEWFe2YmqoXGCH2t9jrom6cfO7JqKzd/Mr4ZYh63T+qDTTy5s0bef/+vdtOK9eIgRFiScXFJ/a9WHLXbvYZByeiY2gEraAZtIOGTG3pGkaI/ezOzo67Cs7Pz8v8z3eMgxKRH1pBM1gN0VCza8OGEWIZxbVgMpmUZ8+eyb83PjcOSER+aAXNoB001GxL2jBCXFTiGcjq6qpMT0/L7nefGgckIr/895+5zaAdNNTsBk3DCL3rQTwLmX4yZhyMiE466vtI/pz4w22nlevCwAjxlwF4MIlnIqbBiMgMzaAdNHQuEeLhpGkgIjJDM4yQyCJGSGQZIySyjBESWcYIiSxjhESWMUIiyxghkWWMkMgyRkhkGSMksowRElnGCIksY4REljFCIssYIZ3e0AMpxSJSfHDJ/Dm1hBF2Q/+AFBcSUj6S2svJSDk2KAXT8e0aeSVl96Q7UhoxfN4RA1LKuYOKHC1K0XgMtYIRdtw9KTmVyWp4lVOjZw/RSoRXpJR2BxXJzRl+h9HKd1K/YzxU9xnpGGGnjb+tTEVMxgdSCF2RwtCglFI7lXfV++OGn2uHlQgVrPAzj6V4y/CZL8J7hs/Jwwg7bSZRmYobUgpp7/ePN56k1Z/RowqY1FqE5fjb6nHiqDHHr/uPdYVqq3N6zv8/BPXvYv91KcY3tPO8leLQyeu+Usr7/JV/O1r9Pv5XeUY7hqoYYacNz2mTOSGlsdvm43SnjtD0OlQrbX1ATbbITi3K6suw5WSE54MRdkFBReWflCqMZESKw18Yjz9ThAji7nUpjGnvnQhIj1CNMXZDCsNqZa7eOFLf7/ltKdxVx3nXfZKR0pB+joAIXdyOtooRdktITeh43R1S9SonH5+8qXGGCMvPa6teMVl5U9QKrB+vR5gerx0f91ZA7XjjdznGCM8HI+y6S1IYGVUrzGFliiKcK/5jzhKhtuUzRuXSIkyNBh/PCDuOEXZYdWIf1T9Le1RdFcurg9r7SjdXQkZoHSPssMLzjcpUVJMxNS7FIXW9FrohxVjt7mN5YcD/c9WJ701gtXrq5wmIUBwV+3DdNWE60viasBsRJh/VfUY6Rthp/dqEN72O1ITXH11ASE3gumtH/RUY4YnXoZTGAu6OdizC+t/75M/TMUbYDaY/WzvaUSuEWhmND7qVkYiUq5P4UIVXe/7XOEJ1zpj6b2+cVp4TdixCtQsIL2q/AyNshBESWcYIiSxjhESWMUIiyxghkWWMkMgyRkhkGSMksowRElnGCIksY4REljFCIssYIZFljJDIMkZIZBkjJLKMERJZdm4Rbm5uytLSkkxOThoHIiIzNIN20NCZIsxkMrK8vCzhcNg4EBGZoRm0g4ZOHaHjOLK1tSUrKysSiUQke+2icTAi8kMraAbtoCG0ZGrM0zDCvb09yWazkkgk5OnTp7J2s884IBH5oRU0g3bQEFoyNeZpGOH+/r7k83lZX1+XWCwmLx4OGQckIr8XD39ym0E7aAgtmRrzBEaIvSzu7uACc2ZmRv7+4WvjoER0DI2gFVwPendGTx0hYBnd3t52i15YWJDob2PifPuJcXCiXud887FEf/9VXr9+7TaDdpptRSEwQhSMi0rsa9fW1tyTz87Oyl+//CjJW5d5s4Z6XvbqBbeFl/cH3RUQjaAVNIN2mq2CEBgheNvSXC4nGxsb7jKL/W40GpWpqSn3ViyeieDhJFGvwJzH3EcDaAFNoA00glZa2YZ6mkYI3oqI5RUPH7HU4s4PbsHiehHw1wFEvcKb92gALaAJtIFGWl0BPS1F6MH+FoXjjg+WWzwDwcNIDI6LUKJegTmPuY8G0AKaQButXAPWaytCQOEYCFA8BibqVWjA66Gd1U/XdoREdL4YIZFljJDIMkZIZBkjJLKMERJZxgiJrDqQ/wETkqxrpSgKYQAAAABJRU5ErkJggg==" />
+              </ui:ClickImage.Image>
+              <ui:ClickImage.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7951c29-d58a-47f8-861f-c2e943b516ce" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickImage.Target>
+            </ui:ClickImage>
+            <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="1" DelayMS="1" DisplayName="Click I am not a robot" sap:VirtualizedContainerService.HintSize="724.8,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0941a60-8781-48b7-ba47-1123a82fd8cb" InformativeScreenshot="23e1e56fc846d0599f09b56344f99a89" Selector="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;&lt;webctrl aaname='presentation' tag='BUTTON' /&gt;" TimeoutMS="2000" WaitForReady="NONE" />
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
